@@ -5,6 +5,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+            #font1,#font2{
+                font-family:arial;
+                font-weight:bold;
+            }
+            .image1{
+                height:50px;
+                width:50px;
+                background-image:url(./logo3.png);
+                background-size:cover;
+            }
+            .image2{
+                height:50px;
+                width:250px;
+                background-image:url(./logo.png);
+                background-size:cover;
+            }
+            #image{
+                display:flex;
+                gap:0px;
+            }
+            
+        </style>
 
         <!-- Google tag (gtag.js) 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQGVWYP88F"></script>
@@ -45,14 +68,18 @@
     </head>
 
     <body class="font-sans antialiased">
-        <div class="container-fluid header-top bg-white sticky-top">
+        <div class="container-fluid header-top bg-white relative-top">
             <div class="container-xl">
                 <div class="row m-0">
                     <div class="col-lg-3 nav-col align-self-center">
                         <a href="./Author.html">
-                            <!--add image logo here below line -->
+                            <!--add image logo here below line 
                             <img class="max-250" src="./logo3.png" alt="Logo text">
-                            <img class="max-250" src="./logo.png" alt="Logo text">
+                            <img class="max-250" src="./logo.png" alt="Logo text">-->
+                            <div id="image">
+                                <div class="image1"></div>
+                                <div class="image2"></div>
+                            </div>
                         </a>
                         <a data-bs-toggle="collapse" data-bs-target="#menu" class="float-end pt-1 d-lg-none "><i
                                 class="bi  fs-1 cp bi-list"></i></a>
@@ -60,7 +87,7 @@
                     <div id="menu"
                         class="col-lg-7 col-md-8 d-none d-lg-block align-self-center  justify-content-center d-flex">
                         <ul class="fw-bold main-nav">
-                            <li class="float-start px-3 py-4"><a href="">Home</a> </li>
+                            <li class="float-start px-3 py-4"><a href="./index.html">Main Page</a> </li>
                             <li class="float-start px-3 py-4"><a
                                     href="s">Service</a>
                                 <div class="small-nav p-31 shadow-md bg-white">
@@ -182,11 +209,11 @@
                                 <div class="image border-bottom">
                                     <img loading="lazy" src="" alt="">
                                 </div>
-                                <div class="detail p-3 pt-4">
+                                <div class="detail p-3 pt-4"><a href="./videocall.html">
                                     <h4 class="fs-6 text-truncate fw-bolder">Video Call</h4>
                                     <p class="fs-8 truncate-2">Connect with a helping hand
                                        </p>
-                                    
+                                    </a>
                                 </div>
                             </a>
                         </div>
