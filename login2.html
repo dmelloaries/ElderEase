@@ -1,35 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
+<head>
+    <title>Volunteer Login</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Set initial scale to 1.0 -->
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    
-    <div class="container">
-      <div class="center">
-          <h1>Volunteer Login</h1>
-          <form action="" method="POST">
-              <div class="txt_field">
-                  <input type="text" name="text" required>
-                  <span></span>
-                  <label>Username</label>
-              </div>
-              <div class="txt_field">
-                  <input type="password" name="password" required>
-                  <span></span>
-                  <label>Password</label>
-              </div>
-              <div class="pass"><a id="forgot" href="https://wordpress.com/support/passwords/">Forget Password?</a></div>
-              <a href="./home3.html">
-              <input name="submit " type="button" value="Login"></a>
-              <div class="signup_link">
-                  Not a Member ? <a href="./signup2.html">Signup</a>
-              </div>
-          </form>
-      </div>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .center {
+            text-align: center;
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .txt_field {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        label {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: 0.3s;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            background: transparent;
+        }
+
+        input[type="text"]:focus + label,
+        input[type="password"]:focus + label {
+            top: 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .pass {
+            text-align: right;
+            margin-top: -10px;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .signup_link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            .center {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="center">
+        <h1>Volunteer Login</h1>
+        <form action="" method="POST">
+            <div class="txt_field">
+                <input type="text" name="text" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" name="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="pass"><a id="forgot" href="https://wordpress.com/support/passwords/">Forgot Password?</a></div>
+            <a href="./home3.html"><input name="submit" type="button" value="Login"></a>
+            <div class="signup_link">
+                Not a Member? <a href="./signup2.html">Signup</a>
+            </div>
+        </form>
     </div>
-  </body>
+</div>
+</body>
 </html>
