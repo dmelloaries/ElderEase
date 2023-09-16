@@ -1,36 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Home</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Add initial-scale -->
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+    <style>
+        /* Add your CSS styles here */
+        body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgb(153, 216, 232);
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 29vw;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+  }
+  
+  .center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  
+  form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #1899e4;
+    margin: 30px 0;
+  }
+  
+  .txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  .txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #2195e3;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+  }
+  
+  .txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+  }
+  
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+  }
+  
+  .txt_field input:focus ~ span::before,
+  .txt_field input:Valid ~ span::before{
+    width: 100%;
+  }
+  
+  .pass{
+    margin: -5px 0 20px 5px;
+    color: #21a1c1;
+    cursor: pointer;
+  }
+  
+  .pass:hover{
+    text-decoration: underline;
+  }
+  
+  input[type="Submit"  ]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  
+  }
+  
+  input[type="Submit"]:hover{
+    background: #2691d9;
+    color: #e9f4fb;
+    transition: .5s;
+  }
+  
+  .signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+  }
+  
+  .signup_link a{
+    color: #2691d9;
+    text-decoration: none;
+  }
+  
+  .signup_link a:hover{
+    text-decoration: underline;
+  }
+  
+  .HomeAbout{
+    width: 100vw;
+    height: 25vh;
+  }
+
+  #heading{
     
+    
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    
+    background: linear-gradient(120deg,#4b0404,rgb(89, 82, 3), #63c9b8);
+    -webkit-background-clip: text;
+            
+            color: transparent; /* Make the text color transparent */
+            font-size: 3rem;
+            
+
+  }
+  #forgot{
+    color:rgb(153, 216, 232);;
+  }
+  input[type="button"  ]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  
+  }
+
+        /* Center the content vertically and horizontally */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 100% of the viewport height */
+        }
+
+        .center {
+            text-align: center;
+            padding: 20px;
+            max-width: 400px; /* Adjust the maximum width as needed */
+            width: 100%;
+        }
+
+        /* Style the form elements */
+        .txt_field {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        label {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: 0.3s;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            background: transparent;
+        }
+
+        input[type="text"]:focus + label,
+        input[type="password"]:focus + label {
+            top: 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Style the "Forgot Password?" link */
+        .pass {
+            text-align: right;
+            margin-top: -10px;
+        }
+
+        /* Style the "Login" button */
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style the "Not a Member?" link */
+        .signup_link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            .center {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
     <div class="container">
-      <div class="center">
-          <h1>Elder Login</h1>
-          <form action="" method="POST">
-              <div class="txt_field">
-                  <input type="text" name="text" required>
-                  <span></span>
-                  <label>Username</label>
-              </div>
-              <div class="txt_field">
-                  <input type="password" name="password" required>
-                  <span></span>
-                  <label>Password</label>
-              </div>
-              <div class="pass"><a id="forgot" href="https://wordpress.com/support/passwords/">Forget Password?</a></div>
-              <a href="./home2.html">
-              <input name="submit " type="button" value="Login"></a>
-              <div class="signup_link">
-                  Not a Member ? <a href="./signup.html">Signup</a>
-              </div>
-          </form>
-      </div>
+        <div class="center">
+            <h1>Elder Login</h1>
+            <form action="" method="POST">
+                <div class="txt_field">
+                    <input type="text" name="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" name="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass"><a id="forgot" href="https://wordpress.com/support/passwords/">Forgot Password?</a></div>
+                <a href="./home2.html"><input name="submit" type="button" value="Login"></a>
+                <div class="signup_link">
+                    Not a Member? <a href="./signup.html">Signup</a>
+                </div>
+            </form>
+        </div>
     </div>
-  </body>
-  <script src="support.js"></script>
+</body>
+<script src="support.js"></script>
 </html>
