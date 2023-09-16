@@ -32,7 +32,7 @@ body{
   
   form .txt_field{
     position: relative;
-    border-bottom: 2px solid #adadad;
+    border-bottom: 2px solid #1899e4;
     margin: 30px 0;
   }
   
@@ -50,7 +50,7 @@ body{
     position: absolute;
     top: 50%;
     left: 5px;
-    color: #adadad;
+    color: #2195e3;
     transform: translateY(-50%);
     font-size: 16px;
     pointer-events: none;
@@ -80,7 +80,7 @@ body{
   
   .pass{
     margin: -5px 0 20px 5px;
-    color: #a6a6a6;
+    color: #21a1c1;
     cursor: pointer;
   }
   
@@ -141,7 +141,7 @@ body{
 
   }
   #forgot{
-    color: grey;
+    color:rgb(153, 216, 232);;
   }
   input[type="button"  ]{
     width: 100%;

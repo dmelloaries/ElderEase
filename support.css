@@ -1,0 +1,84 @@
+/* Reset some default styles */
+body, h1, h2, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Add shadow to the header */
+header {
+    background-color:#1ab69d;
+    color:whitesmoke;
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); /* Shadow at the bottom */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #133785;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius:25px;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add shadow to the footer */
+footer {
+    background-color: #1ab69d;
+    color:whitesmoke;
+    padding: 10px;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2); /* Shadow at the top */
+}
+
+.bold{
+    font-weight:bold;
+    font-size:15px;
+    font-family:arial;
+    width:100%
+}
+.shadow {
+    height: 30px;
+    width: 145px;
+    background-color: #1ab69d;
+    border: 2px solid #1ab69d;
+    color:whitesmoke;
+    border-radius: 30px;
+    padding-left: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adding box-shadow for the shadow effect */
+}
+main{
+
+    border-radius:30px;
+}
+#name,#email,#message{
+    border-radius:10px;
+    border:1px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
