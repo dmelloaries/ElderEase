@@ -71,7 +71,11 @@
         <link rel="modulepreload" href="https://www.smarteyeapps.com/build/assets/home-70f083d0.js" />
         <link rel="modulepreload" href="https://www.smarteyeapps.com/build/assets/bootstrap.esm-03e0081a.js" />
         <link rel="stylesheet" href="https://www.smarteyeapps.com/build/assets/style-f25e7e21.css" />
+        <!-- Add these script tags to your HTML file -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
         <script type="module" src="https://www.smarteyeapps.com/build/assets/home-70f083d0.js"></script>
+        
     </head>
 
     <body class="font-sans antialiased">
@@ -104,6 +108,19 @@
                             </li>
                             <li class="float-start px-3 py-4"><a href="#">Connect</a></li>
                             <li class="float-start px-3 py-4"><a href="./support.html">Support</a></li>
+                            <!-- Include the login button in the mobile menu -->
+                            <li class="d-lg-none float-start px-3 py-4">
+                                <a href="#" class="btn btn-primary fs-8 fw-bolder" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Login
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="loginDropdown">
+                                    <!-- Dropdown content goes here -->
+                                    <a class="dropdown-item" href="./login2.html" id="font1">Volunteer login</a>
+                                    <a class="dropdown-item" href="./login.html" id="font2">Elder login</a>
+                                    <!--<div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>-->
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-md-4 d-none d-lg-block align-self-center text-end dropdown">
@@ -121,6 +138,8 @@
                 </div>
             </div>
         </div>
+        
+        
         
         
        <!-- <div class="container-fluid header-top bg-white relative-top">
