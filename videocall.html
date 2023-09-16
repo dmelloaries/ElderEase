@@ -1,17 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Video Call</title>
-</head>
+</head><style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #local-video,
+  #remote-video {
+    width: 100%;
+    max-width: 640px;
+    margin: 20px auto;
+    background-color: #333;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #start-call {
+    background-color: #28a745;
+  }
+  
+  #end-call {
+    background-color: #dc3545;
+  }
+  #home-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#home-button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+
+
+
 <body>
-    <div id="local-video"></div>
-    <div id="remote-video"></div>
+    <div id="local-video-container">
+        <video id="local-video" autoplay playsinline muted></video>
+    </div>
+    <div id="remote-video-container">
+        <video id="remote-video" autoplay playsinline></video>
+    </div>
     <button id="start-call">Start Call</button>
     <button id="end-call">End Call</button>
+    <div id="home-button-container">
+      <a href="index.html" id="home-button">Home</a>
+  </div>
+  
     <script src="app.js"></script>
-    
 </body>
 </html>
