@@ -1,113 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<title>Task Scheduler</title>
-</head>
-<style>body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-}
-
-header {
-    background-color: #1ab69d;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Adding shadow to the header */
-}
-
-main {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 2rem;
-}
-
-.task-form {
-	display: flex;
-	gap: 10px;
-	margin-bottom: 20px;
-    justify-content:space-around;
-    border-radius:7px;
-}
-
-.task-list {
-	border: 1px solid #ddd;
-	padding: 10px;
-}
-
-.task {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 10px;
-	padding: 5px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-}
-#task{
-    border:1px solid whitesmoke;
-    border-radius:7px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adding shadow to the header */
-}
-#deadline{
-    border:1px solid whitesmoke;
-    border-radius:7px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adding shadow to the header */
-}
-
-
-.task button {
-	background-color: #28a745;
-	color: white;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-}
-#priority{
-    height:50px;
-    width:100px;
-    border:1px solid whitesmoke;
-    border-radius:7px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adding shadow to the header */
-}
-#add-task{
-    border:2px solid whitesmoke;
-    border-radius:7px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adding shadow to the header */
-}
-#task-list{
-    border:1px solid whitesmoke;
-    border-radius:7px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adding shadow to the header */
-}
+<title>ElderEase Blog</title>
+<style>
+    body{
+        font-family:arial;
+    }
+    .main{
+        
+        display:flex;
+        gap:10px;
+        justify-content:space-between;
+        height:100px;
+        width:100px;
+        padding-left:500px;
+    }
+    #elements{
+        padding-top:10px;
+        top: 50px;
+    }
+    .bold{
+        font-size:25px;
+    }
+    header{
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    footer{
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    }
 
 </style>
-
+</head>
 <body>
-	<header>
-		<h1>Task Scheduler</h1>
-	</header>
-	<main>
-		<div class="task-form">
-			<input type="text" id="task" placeholder="Enter task...">
-			<select id="priority">
-				<option value="top">Top Priority</option>
-				<option value="middle">Middle Priority</option>
-				<option value="low">Less Priority</option>
-			</select>
-			<input type="date" id="deadline">
-			<button id="add-task">Add Task</button>
-		</div>
-		<div class="task-list" id="task-list">
-			<!-- Tasks will be added here dynamically -->
-		</div>
-		<script src="logic.js"></script>
-	</main>
-</body>
+    <header style="background-color:#1ab69d";>
+        <div class="main">
+<h1>ElderEase</h1>
+<h3>Medical Information</h3>
 
+</div>
+    </header>
+<main>
+    <!--img src=""
+alt="album cover"
+ height="300"-->
+<h2>About Us</h2>
+<!--image src="R.jpeg" alt="random img" height="300"-->
+    <p id="bold">
+        Incorporating medical services into an elder companion web platform can greatly help senior citizens. 
+        Access to a professional healthcare services through ElderEase, ensuring the well-being and safety of Senior citozens.
+        By connecting with qualified caregivers, schedule medical appointments, and receive expert guidance right from our platform. 
+    </p>
+    <!--br-->
+    <pre style="font-family: Arial, Helvetica, sans-serif;"> 
+<b>Medication Reminders:</b>
+<p id="bold">
+Offer a medication reminder feature that sends alerts to users and their companions 
+when it's time to take prescribed medications.</p>
+
+<b>Health Alerts and Notifications:</b>
+<p id="bold">
+Allow users to set health-related alerts and notifications for doctor's appointments,
+vaccination schedules, and other important healthcare events.</p>
+
+<b>User Education:</b>
+<p id="bold">
+Provide educational content on the importance of regular check-ups, vaccinations,
+and preventive healthcare measures.</p>
+
+<b>Health Tips and Resources:</b>
+<p id="bold">
+Provide a library of health-related articles, videos, and resources that can educate
+both elderly users and companions on various health topics.</p>
+
+<b>Collaboration with Healthcare Providers:</b>
+<p id="bold">
+Establish partnerships with local healthcare providers and hospitals to facilitate easy 
+access to medical services when needed.</p>
+    </pre>
+</main>
+</div>
+    <footer style="background-color:#1ab69d";>
+<hr>
+
+&copy; copyright reserved<br>
+<small><a href="https://dmelloaries.github.io/hackathonDemo/" target="_blank" title="goes to regestration page">
+regestration link
+</a>
+</small>
+    </footer>
+</body>
 </html>
