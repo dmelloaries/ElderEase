@@ -1,126 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: rgb(74, 187, 149);
+            font-family: 'Nunito Sans', sans-serif;
+            background-color: #4ABB95;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         .profile-container {
             display: flex;
-            gap: 50px;
-            height: 300px;
-            width: 900px;
-            background-color: aliceblue;
-            background-position: left left;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            position:absolute;
-            left:160px;
-            border-radius:20px;
-            position:relative;
-            top:160px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            overflow: hidden;
+            max-width: 800px;
         }
 
         .profile-picture {
-    width: 200px;
-    height: 200px;
-    background-image: url(https://media.istockphoto.com/id/1307694376/photo/portrait-of-young-indian-man-with-folded-hands.jpg?s=612x612&w=0&k=20&c=rrVJ41nvwhCDq0pGL2hn9EWwfnyeGs4ZyYHL_0pyZEU=);
-    background-size: cover; /* Ensure the entire image fits within the circle */
-    background-position: center center; /* Center the background image horizontally and vertically */
-    border-radius: 50%;
-    background-color: #ccc; /* Placeholder background color */
-    margin-top: 30px;
-    position: relative;
-    left: 40px;
-    bottom: 20px;
-    top: 3px;
-    box-shadow: 0 0 10px lightgreen;
-    border: 5px solid rgb(74, 187, 149);
-}
-
+            width: 200px;
+            height: 200px;
+            background-image: url(./Aries.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 5px solid #4ABB95;
+        }
 
         .box {
-            font-family:"btn btn-primary shadow-sm fw-bolder py-3 px-5";
-            font-style:bold;
-            background-color:rgb(74, 187, 149);
-            height: 200px;
-            width: 310px;
-            border-radius:8px;
-            padding-left:5px;
-            color: whitesmoke;
-            position: relative;
-            left:100px;
-            top: 40px;
-            font-size:20px;
-            border: 0.1px so box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            flex: 1;
+            padding: 20px;
+            font-size: 18px;
         }
 
-        #Green {
-            color: black;
-            
+        .box p {
+            margin: 5px 0;
         }
 
-        #gray {
-            background-color: gray;
+        .box h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
         }
-        .button{
-            position:relative;
-            left:225px;
-            top:5px;
+
+        .button {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
         }
-        button{
-            height:25px;
-            width:43px;
-            font-size:14px;
-            font-family:"btn btn-primary shadow-sm fw-bolder py-3 px-5";
-            color:white;
-            border:1px solid rgb(74, 187, 149);
-            border-radius:25px;
-            background-color:rgb(55, 163, 222);
+
+        .button button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #377FD0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
         }
-        body{
-            font-family:"btn btn-primary shadow-sm fw-bolder py-3 px-5";
-            font-size:20px;
-            font-weight:bold;
-        }
-        #id{
-            color:whitesmoke;
-            height:20px;
-            position:relative;
-            left:170px;
-            top:150px;
+
+        #id {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 16px;
+            color: #fff;
         }
     </style>
 </head>
-
 <body>
-    <div id="id">Rampal_arjun012</div>
+    <div id="id">Aries_Dmello710</div>
     <div class="profile-container">
-        <div class="profile-picture">
-            <!-- You can use an actual profile picture here -->
-        </div>
+        <div class="profile-picture"></div>
         <div class="box">
-            Name: Arjun Rampal
-            <p>Age: 36 </p>
-            <p>Email: ElderEase@gmail.com</p>
-            <p>Gender: male</p>
-            <p>Location: Maharashra, Bharat</p>
-            <!-- Add more user information here age ,gender,dob -->
+            <h2>Aries Dmello</h2>
+            <p>Age: 19</p>
+            <p>Email: dmelloaries@gmail.com</p>
+            <p>Gender: Male</p>
+            <p>Location: Maharashtra, Mumbai</p>
         </div>
-        
         <form action="./home3.html" class="button">
-          <button type="submit">home</button>
-
+            <button type="submit">Home</button>
         </form>
     </div>
 </body>
-
 </html>
