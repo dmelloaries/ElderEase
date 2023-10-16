@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        /* Internal CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .scheduler {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        /* Calendar Styles */
+        .calendar {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .calendar-header button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+        }
+
+        .calendar-day {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .calendar-cell {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .calendar-cell:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Table-like appearance */
+        .calendar-cell:nth-child(7n) {
+            border-right: none;
+        }
+
+        .calendar-cell:nth-child(-n+7) {
+            border-top: none;
+        }
+
+        /* ... (Additional CSS styles here) ... */
+    </style>
+    <div class="scheduler">
+        <h1>Appointment Scheduler</h1>
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prevMonth">Previous Month</button>
+                <h2 id="currentMonthYear"></h2>
+                <button id="nextMonth">Next Month</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+        </div>
+        <div class="appointment-form" id="appointmentForm">
+            <h2>Create Appointment</h2>
+            <input type="date" id="date" placeholder="Select date">
+            <input type="time" id="time" placeholder="Select time">
+            <input type="text" id="description" placeholder="Description">
+            <button id="addAppointment">Add Appointment</button>
+        </div>
+        <div class="appointments" id="appointments">
+            <h2>Appointments</h2>
+            <ul id="appointmentList">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
